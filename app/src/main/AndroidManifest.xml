@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="saco.ProjectFireTruckV2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/firetruck"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="saco.ProjectFireTruckV2.Activities.StartupScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="saco.ProjectFireTruckV2.Activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="saco.ProjectFireTruckV2.Activities.ChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="saco.ProjectFireTruckV2.Activities.PhotoActivity"
+            android:largeHeap="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="saco.ProjectFireTruckV2.Activities.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="saco.ProjectFireTruckV2.Activities.SetIPActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="saco.ProjectFireTruckV2.Activities.CheckForUpdatesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="saco.ProjectFireTruckV2.Activities.AboutAppActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="saco.ProjectFireTruckV2.Activities.LogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="saco.ProjectFireTruckV2.ConfirmationPopUps.RequestDeleteIPActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name="saco.ProjectFireTruckV2.Activities.InstructionsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="saco.ProjectFireTruckV2.Activities.DiscoverHotSpotActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="saco.ProjectFireTruckV2.Activities.PasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="saco.ProjectFireTruckV2.Activities.WifiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="saco.ProjectFireTruckV2.ConfirmationPopUps.RequestChangeWifiStateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name="saco.ProjectFireTruckV2.etc_utilities.Loading"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"></activity>
+        <activity android:name="saco.ProjectFireTruckV2.Activities.DebugModeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:label="DEBUG MODE"></activity>
+
+        <activity
+            android:name="saco.ProjectFireTruckV2.ConfirmationPopUps.OnBackPressedRequestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            />
+    </application>
+
+</manifest>

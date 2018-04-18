@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CoachmarkArrow">
+        <attr name="size" format="dimension" />
+        <attr name="kolor" format="color" />
+        <attr name="from" format="enum">
+            <enum name="topleft" value="0"/>
+            <enum name="topright" value="1"/>
+            <enum name="bottomleft" value="2"/>
+            <enum name="bottomright" value="3"/>
+        </attr>
+        <attr name="to" format="enum">
+            <enum name="topleft" value="0"/>
+            <enum name="topright" value="1"/>
+            <enum name="bottomleft" value="2"/>
+            <enum name="bottomright" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>

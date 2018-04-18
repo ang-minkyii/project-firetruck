@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayout1"
+    android:background="@android:color/black">
+
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/toastImage"
+        android:layout_centerHorizontal="true">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Received image"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/toastImage"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>
